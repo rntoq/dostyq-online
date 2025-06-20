@@ -1,0 +1,131 @@
+/* ===== Контейнер секции ===== */
+.whyus-wrapper {
+}
+
+/* ===== Обертка блоков ===== */
+.whyus-about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 20px;
+    margin: 80px 0;
+}
+
+
+.whyus-header-block{
+    margin: auto;
+    width: 420px;
+}
+.whyus-title-nege {
+    line-height: 1;
+    text-transform: none;
+}
+
+.whyus-title-biz {
+    font-size: 160px;
+    line-height: 1;
+    color: #A3A9B6;
+}
+
+/* ===== Карточки ===== */
+.whyus-card {
+    border: 1px solid #C2C6CE;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    height: 296px;
+    width: 420px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: background 300ms ease-out, transform 300ms ease-out;
+}
+/* Особая карточка
+
+/* ===== Текст внутри карточек ===== */
+.whyus-subtitle {
+    white-space: pre-line;
+}
+
+.whyus-title {
+    margin: 9px 0;
+    white-space: pre-line;
+}
+
+/* ===== Изображения в карточках ===== */
+.whyus-card-image-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    transition: transform 300ms ease-out;
+}
+
+
+.whyus-card-image {
+    width: 255px;
+    height: 255px;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.whyus-card:hover {
+    background: linear-gradient(90deg, #E62D95 0%, #F05EC4 100%);
+}
+
+.whyus-card:hover .whyus-title.text-gradient {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: white !important;
+    color: white !important;
+}
+
+
+.whyus-card:hover .whyus-card-image-wrapper {
+    transform: scale(1.1);
+}
+
+/* ===== Рекорд блок ===== */
+.whyus-record-container {
+    position: relative;
+    width: 100%;
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+.whyus-record-image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: auto;
+}
+
+/* ===== Оверлей поверх изображения ===== */
+.whyus-record-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 76px 0 30px 53px;
+    box-sizing: border-box;
+}
+
+.whyus-record-title {
+    margin: 4px 0 ;
+}
+
+
+/* Имя с рамкой */
+.whyus-record-name {
+    width: max-content;
+    margin-top: 39px;
+    padding: 10px 24px;
+    border: 2px solid #F4E365;
+    border-radius: 24px;
+    display: inline-block;
+}

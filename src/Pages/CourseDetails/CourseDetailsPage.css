@@ -1,0 +1,22 @@
+.course-details-content {
+    display: flex;
+    gap: 40px;
+    padding: 40px 80px;
+}
+
+.course-info-area {
+    display: flex;
+}
+.course-sections-area{
+    margin: 42px 20px 153px 0;
+}
+.course-sidebar-area {
+    width: 413px;
+    flex-shrink: 0;
+}
+
+
+.course-details-main {
+    background-color: #F1F3F5;
+}
+

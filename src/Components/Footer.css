@@ -1,0 +1,9 @@
+.app-footer {
+    background-color: #212121;
+    width: 100%;
+}
+.app-footer-wrapper{
+    width: 1280px !important;
+    padding: 50px 0;
+    margin: 0 auto;
+}
