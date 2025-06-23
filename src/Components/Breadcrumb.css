@@ -1,0 +1,38 @@
+.breadcrumb-nav {
+    margin-bottom: 24px;
+}
+
+.breadcrumb-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #909090; /* Or your desired color for links */
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item span:not(.breadcrumb-separator) {
+    color: #3C56DE; /* Or your desired color for the current page */
+    font-weight: 500;
+}
+
+.breadcrumb-separator {
+    color: #909090; /* Or your desired color for the separator */
+    user-select: none; /* Prevents selecting the separator text */
+}
+  

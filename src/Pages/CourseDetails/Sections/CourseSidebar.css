@@ -1,0 +1,106 @@
+.course-sidebar {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 24px 20px;
+    position: sticky;
+    top: 168px;
+}
+
+.course-sidebar-title {
+    margin-bottom: 18px;
+    color: #222;
+}
+
+.course-sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.course-sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+}
+
+.course-sidebar-item:last-child {
+    border-bottom: none;
+}
+
+.course-sidebar-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.price-breakdown {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+
+.value {
+   background-color: #FFECF7;
+   color: #E62D95;
+   font-weight: 500;
+   padding: 5px 10px;
+   border-radius: 8px;
+}
+
+.price-total {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.total-label {
+    color: #333843;
+}
+
+.total-value {
+    color: #E62F96;
+}
+
+.add-to-cart-button {
+    background: linear-gradient(90deg, #E62D95 0%, #F05EC4 100%);
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background: linear-gradient(90deg, #d92689 0%, #e04eb6 100%);
+}
+
+.go-back-button {
+    width: 100%;
+    padding: 12px;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.go-back-button:hover {
+    background-color: #f5f5f5;
+}

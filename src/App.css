@@ -122,11 +122,13 @@ body {
   flex: 1;
 }
 
-
+strong{
+  font-weight: 700;
+  font-size: 18px;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Stapel Bold', sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
   color: inherit;
 }
 
@@ -155,6 +157,7 @@ a{
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  text-decoration: none;
 }
 
 p{
@@ -167,17 +170,35 @@ ul li{
   font-size: 16px;
   color: #606F7B;
 }
+
+button{
+  font-weight: 600;
+  color: #434343;
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+.p-xbig{
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
 .p-big{
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
-
-
 .p-small{
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
+}
+.p-xsmall{
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
 }
 
 
@@ -188,6 +209,9 @@ ul li{
 }
 .text-dark{
   color: #182453;
+}
+.text-gray{
+  color: #909090;
 }
 
 .text-center {
@@ -201,6 +225,12 @@ ul li{
 .uppercase {
   text-transform: uppercase;
 }
+.b-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: inline-block;
+}
 
 .icon {
   width: 24px;
@@ -209,7 +239,7 @@ ul li{
   display: inline-block;
 }
 
-.chevron-icon {
+.s-icon {
   width: 20px;
   height: 20px;
   object-fit: contain;

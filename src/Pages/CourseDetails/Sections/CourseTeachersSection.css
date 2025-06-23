@@ -1,0 +1,61 @@
+.course-teacher-section {
+  padding: 32px 0 ;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.course-teacher-title {
+  color: #222;
+}
+
+.teacher-card {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  gap: 24px;
+}
+
+.teacher-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eaeaea;
+}
+
+.teacher-info-block {
+  flex: 1;
+}
+
+.teacher-name {
+    font-weight: 500 !important;
+}
+
+.teacher-profession {
+}
+
+.teacher-stats {
+  display: flex;
+  gap: 20px;
+}
+
+.teacher-stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.teacher-stat-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.teacher-achievements {
+  margin: 0;
+  padding: 0 0 0 16px;
+}
+
+.teacher-achievements li {
+  color: #212121;
+  margin-bottom: 8px;
+  list-style: disc;
+} 

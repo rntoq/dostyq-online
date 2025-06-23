@@ -6,9 +6,12 @@
 
 .course-info-area {
     display: flex;
+    justify-content: space-between;
 }
 .course-sections-area{
+    width: inherit;
     margin: 42px 20px 153px 0;
+    color: #434343;
 }
 .course-sidebar-area {
     width: 413px;
@@ -20,3 +23,20 @@
     background-color: #F1F3F5;
 }
 
+.course-sections-area h1, h2, h3, h4, h5, h6 {
+    text-transform: none ;
+}
+  
+.course-sections-area h4{
+    color: #434343 !important;
+    margin-bottom: 24px !important;
+}
+
+.course-details-main h1,
+.course-details-main h2,
+.course-details-main h3,
+.course-details-main h4,
+.course-details-main h5,
+.course-details-main h6 {
+    text-transform: none;
+}

@@ -1,0 +1,64 @@
+.course-content-section {
+  padding: 32px 0;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.course-content-title {
+  
+}
+
+.course-content-stats {
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 8px;
+  justify-content: space-between;
+  padding: 16px 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.course-content-stat {
+  flex: 1;
+  border-right: 1px solid #DDDDDD;
+}
+.course-content-stat:last-child {
+  border-right: none;
+}
+.stat-value {
+    margin-top: 8px;
+}
+.stat-label {
+}
+
+.course-content-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion-item {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-title {
+  width: 100%;
+  padding: 16px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chevron {
+  transition: transform 0.2s;
+}
+.chevron.open {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  padding: 16px 20px;
+} 
