@@ -1,0 +1,65 @@
+/* UI Kit Select Styles */
+.ui-select-wrapper {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.ui-select-container {
+  position: relative;
+  width: 100%;
+}
+
+.ui-select {
+  min-width: 170px;
+  padding: 10px 12px;
+  border: 1px solid #858D9D;
+  border-radius: 8px;
+  background: #FFFFFF;
+  outline: none;
+  appearance: none;
+  font-size: 14px;
+  color: #858D9D;
+  transition: border 0.2s, background 0.2s;
+  cursor: pointer;
+}
+.ui-select::placeholder{
+    font-size: 14px;
+    color: #858D9D;
+    padding: 12px 14px;
+}
+.ui-select:focus {
+  border-color: #5C59E8;
+}
+
+.ui-select-error {
+  border-color: #FCDAD7;
+  background: #FEEDEC;
+}
+
+.ui-select-disabled {
+  background: #f3f4f6;
+  color: #a1a1aa;
+  cursor: not-allowed;
+}
+
+.ui-select-chevron {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.ui-select-error-message {
+  bottom: -20px;
+  position: absolute;
+  color: #F04438;
+  font-size: 12px;
+}
+
+.ui-select-wrapper-error .ui-select-chevron svg path {
+  stroke: #f87171;
+} 

@@ -1,0 +1,126 @@
+/* === CourseIntroSection.css === */
+
+.course-intro {
+}
+
+.course-intro-container {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+
+.course-hero {
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.course-info {
+    flex: 1;
+    min-width: 260px;
+}
+
+.course-title {
+    margin-bottom: 12px;
+}
+
+.course-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.teacher-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.teacher-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f0f0f0;
+}
+
+.stats {
+    display: flex;
+    gap: 32px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.stat-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.course-image-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 32px 0;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.85);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.play-button-overlay:hover {
+    background: rgba(255,255,255,1);
+}
+
+.play-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.course-description p{
+    margin: 0;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .course-intro-container {
+        padding: 18px 6vw 24px 6vw;
+    }
+    .course-hero {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .course-image-wrapper {
+        width: 100%;
+        min-width: 0;
+        aspect-ratio: 16/9;
+    }
+}

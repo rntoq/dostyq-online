@@ -1,0 +1,186 @@
+.checkout-sidebar {
+    width: 100%;
+    max-width: 413px; 
+}
+
+.discount-banner {
+    background-color: #F9F9FC;
+    border-radius: 8px;
+    padding: 16px 24px;
+    display: flex;
+    border: 1px solid #99CAFF;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.banner-price{
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+
+}
+.banner-emoji {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+}
+
+.banner-fire {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+}
+
+.banner-text p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.banner-discount {
+    font-weight: bold;
+    color: #FF7043;
+    font-size: 20px;
+}
+
+.banner-button {
+    background-color: #D539E1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 16px;
+}
+.course-item:last-child {
+    border-bottom: none;
+}
+.course-name {
+    margin: 0 0 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.course-discount-badge {
+    background-color: #FFE4EE;
+    color: #D539E1;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.course-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #F0F0F0;
+    border-radius: 16px;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.price-info {
+    text-align: right;
+}
+
+.payment-type {
+    background-color: #E4F7F0;
+    color: #12B76A;
+    border-radius: 16px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.original-price {
+    font-size: 14px;
+    color: #9E9E9E;
+    text-decoration: line-through;
+    display: block;
+}
+
+.final-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.bonus-item .course-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bonus-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.price-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #EBEBEB;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount-amount {
+    color: #D32F2F;
+    font-weight: bold;
+}
+
+.total-row {
+    margin-top: 8px;
+}
+
+.checkout-button {
+    width: 100%;
+    background-color: #BDBDBD;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: not-allowed;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:not(:disabled) {
+    background-color: #7932F2;
+    cursor: pointer;
+}
+
+.checkout-button:not(:disabled):hover {
+    background-color: #6228c8;
+} 

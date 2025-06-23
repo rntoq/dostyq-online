@@ -1,14 +1,12 @@
 import React from 'react';
-import { Element } from 'react-scroll';
 import './CourseDetailsPage.css';
 import Header from '../../Components/Header.jsx';
-import CourseIntroSection from './Components/CourseIntroSection.jsx';
-// import CourseContentSection from './Components/CourseContentSection.jsx';
-// import CourseBenefitsSection from './Components/CourseBenefitsSection.jsx';
-// import CourseTeachersSection from './Components/CourseTeachersSection.jsx';
-// import ContactFormSection from './Components/ContactFormSection.jsx';
+import CourseIntroSection from './Sections/CourseIntroSection.jsx';
+import CourseContentSection from './Sections/CourseContentSection.jsx';
+import CourseTeachersSection from './Sections/CourseTeachersSection.jsx';
+import CourseFeedbacksSection from './Sections/CourseFeedbacksSection.jsx';
 import Footer from '../../Components/Footer.jsx';
-import CourseSidebar from "./Components/CourseSidebar";
+import CourseSidebar from './Sections/CourseSidebar.jsx';
 
 const CourseDetailsPage = ()=> {
     return (
@@ -18,10 +16,9 @@ const CourseDetailsPage = ()=> {
                 <div className="course-info-area wrapper">
                     <div className="course-sections-area">
                         <CourseIntroSection/>
-                        {/*<CourseContentSection />*/}
-                        {/*<CourseBenefitsSection />*/}
-                        {/*<CourseTeachersSection />*/}
-                        {/*<ContactFormSection />*/}
+                        <CourseContentSection/>
+                        <CourseTeachersSection/>
+                        <CourseFeedbacksSection/>
                     </div>
                     <div className="course-sidebar-area">
                         <CourseSidebar basePrice={25000} discount={0}/>

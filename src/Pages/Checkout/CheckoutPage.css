@@ -1,0 +1,28 @@
+.checkout-page{
+    background-color: #F1F3F5;
+}
+
+.checkout-page .container {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.checkout-content {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px; /* Adjust gap as needed */
+    margin-top: 40px;
+}
+checkout-content h2
+
+.checkout-content > *:first-child {
+    flex: 2; /* Form takes more space */
+}
+
+.checkout-content > *:last-child {
+    flex: 1; /* Sidebar takes less space */
+    position: sticky;
+    top: 20px;
+} 
