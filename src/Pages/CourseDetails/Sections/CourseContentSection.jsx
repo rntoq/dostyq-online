@@ -7,7 +7,7 @@ const CourseContentSection = ({
   lessonsCount,
   testsCount,
   duration,
-  modules = []
+  modules = [{}]
 }) => {
   const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);

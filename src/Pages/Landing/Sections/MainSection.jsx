@@ -12,16 +12,16 @@ const MainSection = () => {
             id: 1,
             image: slide1,
             alt: 'Slide 1',
-            titleKey: 'main_section.slide1.title',
-            subtextKey: 'main_section.slide1.subtext',
+            titleKey: 'landing.main_section.slide1.title',
+            subtextKey: 'landing.main_section.slide1.subtext',
             linkTo: 'pricing'
         },
         {
             id: 2,
             image: slide2,
             alt: 'Slide 2',
-            titleKey: 'main_section.slide2.title',
-            subtextKey: 'main_section.slide2.subtext',
+            titleKey: 'landing.main_section.slide2.title',
+            subtextKey: 'landing.main_section.slide2.subtext',
             linkTo: 'course-system'
         }
     ];
@@ -105,7 +105,7 @@ const MainSection = () => {
                             offset={-80}
                             className="main-button"
                         >
-                            {t('main_section.start_button')}
+                            {t('landing.main_section.start_button')}
                         </ScrollLink>
                     </div>
                 </div>

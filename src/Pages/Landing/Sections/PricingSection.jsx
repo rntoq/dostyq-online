@@ -26,15 +26,15 @@ const PricingSection = () => {
             <div className="wrapper">
                 <div className="pricing-header-with-info">
                     <h2 className="pricing-title text-dark">
-                        {t('pricing.title_part1')} <span className="text-gradient">{t('pricing.title_part2')}</span>
+                        {t('landing.pricing.title_part1')} <span className="text-gradient">{t('landing.pricing.title_part2')}</span>
                     </h2>
 
                     {selectedSubjects.length > 0 && selectedSubjects.length < 3 && (
                         <div className={`subject-info-box ${selectedSubjects.length === 2 ? 'discount-35' : 'discount-20'}`}>
                              <img src={emojiIcon} className="emoji-icon top-left" alt="icon"/>
                              <img src={fireIcon} className="emoji-icon bottom-right" alt="icon"/>
-                             <p>{t('pricing.promo_text', { count: selectedSubjects.length + 1 })}</p>
-                            <strong className="info-box-discount">{getDiscount()} {t('pricing.discount_text')}</strong>
+                             <p>{t('landing.pricing.promo_text', { count: selectedSubjects.length + 1 })}</p>
+                            <strong className="info-box-discount">{getDiscount()} {t('landing.pricing.discount_text')}</strong>
                         </div>
                     )}
                 </div>
@@ -46,7 +46,7 @@ const PricingSection = () => {
                             className={`pricing-tab ${selectedExam === examKey ? 'active' : ''}`}
                             onClick={() => setSelectedExam(examKey)}
                         >
-                            {t(`pricing.exam_options.${examKey}`)}
+                            {t(`landing.pricing.exam_options.${examKey}`)}
                         </button>
                     ))}
                 </div>
@@ -65,7 +65,7 @@ const PricingSection = () => {
                                             {getDiscount()}
                                         </span>
                                     )}
-                                    <p className="subject-name">{t(`pricing.subjects.${subjectKey}`)}</p>
+                                    <p className="subject-name">{t(`landing.pricing.subjects.${subjectKey}`)}</p>
                                     <div className="card-icons">
                                         <Link to={`/courses/${subjectKey}`}>
                                             <img src={chevron} alt=">" className="subject-icon s-icon" />

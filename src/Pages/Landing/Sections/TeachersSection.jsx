@@ -12,13 +12,13 @@ const teacherImages = [teacher1, teacher2, teacher3, teacher4];
 
 const TeachersSection = () => {
     const { t } = useTranslation();
-    const teachers = t('teachersSection.teachers', { returnObjects: true });
+    const teachers = t('landing.teachersSection.teachers', { returnObjects: true });
 
     return (
         <section className="landing-teachers-section">
             <div className="wrapper">
                 <h2 className="text-dark">
-                    <Trans i18nKey="teachersSection.title">
+                    <Trans i18nKey="landing.teachersSection.title">
                         Dostyq online <span className="text-gradient">ұстаздары</span>
                     </Trans>
                 </h2>

@@ -35,12 +35,14 @@ const CourseFeedbacksSection = ({ feedbacks = [] }) => {
                   {t('courseDetails.feedbacks.pointBLabel', { pointB: feedback.pointB })} 
                 </p>
               </div>
-              <p className="feedback-text">{feedback.text}</p>
-              <Link to={feedback.link} className="feedback-link">
-                {t('courseDetails.feedbacks.fullView')}
-                <img src={arrowIcon} alt=">" className="s-icon" />
-              </Link>
             </div>
+            <div className='feedback-text-container'>
+                <p className="feedback-text">{feedback.text}</p>
+                <Link to={feedback.link} className="feedback-link">
+                  {t('courseDetails.feedbacks.fullView')}
+                  <img src={arrowIcon} alt=">" className="s-icon" />
+                </Link>
+              </div>
           </div>
           <div className="feedback-certificate">
             <img src={feedback.certificate} alt="Certificate" />

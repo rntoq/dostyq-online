@@ -48,37 +48,38 @@
 }
 
 .banner-button {
-    background-color: #D539E1;
+    background-color: #E62D95;
     color: #fff;
-    border: none;
     border-radius: 8px;
-    padding: 8px 16px;
+    padding: 10px 14px;
     cursor: pointer;
-    text-decoration: none;
 }
 
 .course-list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-bottom: 24px;
+    gap: 24px;
+}
+
+.sidebar-course-info{
+    display: flex;
+    margin-bottom: 14px;
+}
+.sidebar-course-info img{
+    margin-right: 12px;
 }
 
 .course-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    border-bottom: 1px solid #EBEBEB;
-    padding-bottom: 16px;
+    border-bottom: 1px solid #E0E2E7;
+    padding-bottom: 24px;
 }
 .course-item:last-child {
     border-bottom: none;
 }
 .course-name {
-    margin: 0 0 8px 0;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 .course-discount-badge {
@@ -91,43 +92,50 @@
 }
 
 .course-tag {
-    display: inline-flex;
     align-items: center;
     gap: 4px;
-    background-color: #F0F0F0;
-    border-radius: 16px;
-    padding: 4px 10px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .price-info {
     text-align: right;
+    display: flex;
 }
-
+.course-item div{
+    display: flex;
+    justify-content: space-between;
+}
 .payment-type {
-    background-color: #E4F7F0;
-    color: #12B76A;
-    border-radius: 16px;
-    padding: 4px 8px;
-    font-size: 12px;
+    background-color: #E7F4EE;
+    color: #1B998B;
+    border-radius: 8px;
+    padding: 2px 8px;
+    font-size: 14px;
     font-weight: 500;
     display: block;
-    margin-bottom: 8px;
 }
 
 .original-price {
     font-size: 14px;
-    color: #9E9E9E;
+    color: #909090;
     text-decoration: line-through;
     display: block;
 }
 
 .final-price {
-    font-size: 16px;
-    font-weight: bold;
-    color: #212121;
+    font-weight: 700;
+    color: #5E71E2;
 }
 
+.course-price{
+    flex-direction: column;
+    gap: 2px;
+}
+
+.bonus-item{
+    display: flex;
+    justify-content: space-between;
+}
 .bonus-item .course-info {
     display: flex;
     align-items: center;
@@ -143,8 +151,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-bottom: 24px;
-    padding-top: 16px;
+    padding: 24px 0;
     border-top: 1px solid #EBEBEB;
 }
 
@@ -155,12 +162,14 @@
 }
 
 .discount-amount {
-    color: #D32F2F;
-    font-weight: bold;
+    color: #ED4FA7;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .total-row {
-    margin-top: 8px;
+    border-top: 1px solid #E0E2E7;
+    padding-top: 24px;
 }
 
 .checkout-button {

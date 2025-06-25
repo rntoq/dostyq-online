@@ -24,14 +24,14 @@ const WhyUsSection = () => {
             <div className="wrapper">
                 <div className="whyus-about-container">
                     <div className="whyus-header-block">
-                        <span className="whyus-title-nege text-gradient">{t('why_us.title_part1')}</span>
-                        <h1 className="whyus-title-biz">{t('why_us.title_part2')}</h1>
+                        <span className="whyus-title-nege text-gradient">{t('landing.why_us.title_part1')}</span>
+                        <h1 className="whyus-title-biz">{t('landing.why_us.title_part2')}</h1>
                     </div>
 
                     {data.map((item, index) => {
-                        const subTitle1 = t(`why_us.cards.${item.key}.subTitle1`, { defaultValue: '' });
-                        const title = t(`why_us.cards.${item.key}.title`);
-                        const subTitle2 = t(`why_us.cards.${item.key}.subTitle2`, { defaultValue: '' });
+                        const subTitle1 = t(`landing.why_us.cards.${item.key}.subTitle1`, { defaultValue: '' });
+                        const title = t(`landing.why_us.cards.${item.key}.title`);
+                        const subTitle2 = t(`landing.why_us.cards.${item.key}.subTitle2`, { defaultValue: '' });
 
                         return (
                             <div key={index} className={`whyus-card`}>
@@ -58,13 +58,13 @@ const WhyUsSection = () => {
                         className="whyus-record-image"
                     />
                     <div className="whyus-record-overlay">
-                        <h3 className="whyus-record-subtitle">{t('why_us.record.subtitle1')}</h3>
-                        <h1 className="whyus-record-title text-gradient">{t('why_us.record.score')}</h1>
+                        <h3 className="whyus-record-subtitle">{t('landing.why_us.record.subtitle1')}</h3>
+                        <h1 className="whyus-record-title text-gradient">{t('landing.why_us.record.score')}</h1>
                         <h3 className="whyus-record-subtitle">
-                            {t('why_us.record.subtitle2_part1')} <span className="text-gradient">dostyq</span> {t('why_us.record.subtitle2_part2')}
+                            {t('landing.why_us.record.subtitle2_part1')} <span className="text-gradient">dostyq</span> {t('landing.why_us.record.subtitle2_part2')}
                         </h3>
                         <div className="whyus-record-name">
-                            <h3 className="whyus-graduate-name">{t('why_us.record.graduate_name')}</h3>
+                            <h3 className="whyus-graduate-name">{t('landing.why_us.record.graduate_name')}</h3>
                         </div>
                     </div>
                 </div>
