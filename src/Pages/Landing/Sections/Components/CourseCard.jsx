@@ -72,7 +72,7 @@ const BonusNote = ({ noteData }) => {
 
 const CourseCard = () => {
     const { t } = useTranslation();
-    const courseData = t('course_cards', { returnObjects: true });
+    const courseData = t('landing.course_cards', { returnObjects: true });
 
     return (
         <div className="pricing-card-grid">

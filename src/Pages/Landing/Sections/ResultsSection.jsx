@@ -7,7 +7,7 @@ import cert1 from '../../../Assets/images/certificate.jpg'; // Placeholder for c
 
 const ResultsSection = () => {
     const { t } = useTranslation();
-    const reviews = t('resultsSection.reviews', { returnObjects: true });
+    const reviews = t('landing.resultsSection.reviews', { returnObjects: true });
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const visibleCards = 3;
@@ -29,7 +29,7 @@ const ResultsSection = () => {
         <section className="results-section">
             <div className="wrapper">
                 <h2 className="text-dark">
-                    <Trans i18nKey="resultsSection.title">
+                    <Trans i18nKey="landing.resultsSection.title">
                         оқушыларымыздың <span className="text-gradient">нәтижелері</span>
                     </Trans>
                 </h2>
@@ -47,14 +47,14 @@ const ResultsSection = () => {
                                         <div className="review-user-info">
                                             <p className="review-name">{review.name}</p>
                                             <p className="review-score p-small">
-                                                {t('resultsSection.reviewCard.pointA', { pointA: review.pointA })}
+                                                {t('landing.resultsSection.reviewCard.pointA', { pointA: review.pointA })}
                                             </p>
                                             <p className="review-score-bold">
-                                                {t('resultsSection.reviewCard.pointB', { pointB: review.pointB })}
+                                                {t('landing.resultsSection.reviewCard.pointB', { pointB: review.pointB })}
                                             </p>
                                         </div>
                                         <Link to={review.link} className="review-link">
-                                            {t('resultsSection.reviewCard.fullView')}
+                                            {t('landing.resultsSection.reviewCard.fullView')}
                                             <img src={chevron} alt=">" className="link-icon"/>
                                         </Link>
                                     </div>

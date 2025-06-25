@@ -56,15 +56,15 @@ const ContactForm = () => {
         const newErrors = { phone: '', grade: '' };
 
         if (!phone) {
-            newErrors.phone = t('contactForm.errors.phoneRequired');
+            newErrors.phone = t('landing.contactForm.errors.phoneRequired');
             valid = false;
         } else if (!validatePhone(phone)) {
-            newErrors.phone = t('contactForm.errors.phoneInvalid');
+            newErrors.phone = t('landing.contactForm.errors.phoneInvalid');
             valid = false;
         }
 
         if (!grade) {
-            newErrors.grade = t('contactForm.errors.gradeRequired');
+            newErrors.grade = t('landing.contactForm.errors.gradeRequired');
             valid = false;
         }
 
@@ -78,9 +78,9 @@ const ContactForm = () => {
 
     return (
         <div className="cf-container">
-            <h1 className="cf-title">{t('contactForm.title')}</h1>
+            <h1 className="cf-title">{t('landing.contactForm.title')}</h1>
             <p className="cf-description">
-                {t('contactForm.description').split('\n').map((line, idx) => (
+                {t('landing.contactForm.description').split('\n').map((line, idx) => (
                     <React.Fragment key={idx}>
                         {line}
                         <br />
@@ -90,7 +90,7 @@ const ContactForm = () => {
 
             {isSubmitted ? (
                 <div className="cf-success">
-                    {t('contactForm.success')}
+                    {t('landing.contactForm.success')}
                 </div>
             ) : (
                 <form className="cf-form" onSubmit={handleSubmit}>
@@ -112,15 +112,15 @@ const ContactForm = () => {
                                 name="grade"
                                 value={formData.grade}
                                 onChange={handleChange}
-                                placeholder={t('contactForm.gradePlaceholder')}
+                                placeholder={t('landing.contactForm.gradePlaceholder')}
                                 error={errors.grade}
                             >
                                 {[5, 6, 7, 8, 9, 10, 11].map(grade => (
-                                    <option key={grade} value={grade}>{t('contactForm.gradeOption', { grade })}</option>
+                                    <option key={grade} value={grade}>{t('landing.contactForm.gradeOption', { grade })}</option>
                                 ))}
                             </Select>
                         </div>
-                        <button type="submit" className="cf-submit">{t('contactForm.submit')}</button>
+                        <button type="submit" className="cf-submit">{t('landing.contactForm.submit')}</button>
                     </div>
                 </form>
             )}

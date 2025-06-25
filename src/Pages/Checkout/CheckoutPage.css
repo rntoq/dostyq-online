@@ -3,7 +3,7 @@
 }
 
 .checkout-page .container {
-    padding-top: 40px;
+    padding-top: 64px;
     padding-bottom: 80px;
 }
 
@@ -12,17 +12,33 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 60px; /* Adjust gap as needed */
-    margin-top: 40px;
+    gap: 20px;
 }
-checkout-content h2
 
 .checkout-content > *:first-child {
-    flex: 2; /* Form takes more space */
+    flex: 2;
 }
 
 .checkout-content > *:last-child {
-    flex: 1; /* Sidebar takes less space */
+    flex: 1;
     position: sticky;
     top: 20px;
+}
+
+
+
+@media (max-width: 900px) {
+    .checkout-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .checkout-content > *:last-child {
+        position: static;
+        top: auto;
+        width: 100%;
+    }
+    .checkout-page .container {
+        padding-top: 18px;
+        padding-bottom: 32px;
+    }
 } 

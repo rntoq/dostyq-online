@@ -30,8 +30,6 @@
     font-weight: 500 !important;
 }
 
-.teacher-profession {
-}
 
 .teacher-stats {
   display: flex;
@@ -56,6 +54,6 @@
 
 .teacher-achievements li {
   color: #212121;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
   list-style: disc;
 } 

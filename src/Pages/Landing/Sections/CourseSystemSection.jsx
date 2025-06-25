@@ -18,13 +18,13 @@ const images = {
 
 const CourseSystemSection = () => {
     const { t } = useTranslation();
-    const registrationData = t('course_system.steps', { returnObjects: true });
+    const registrationData = t('landing.course_system.steps', { returnObjects: true });
 
     return (
         <section className="course-system-section" id="course-system">
             <div className="wrapper">
                 <h2 className="course-system-title">
-                    {t('course_system.title_part1')} <span className="text-gradient">{t('course_system.title_part2')}</span>
+                    {t('landing.course_system.title_part1')} <span className="text-gradient">{t('landing.course_system.title_part2')}</span>
                 </h2>
                 <div className="course-system-grid">
                     {registrationData.map((step, index) => (

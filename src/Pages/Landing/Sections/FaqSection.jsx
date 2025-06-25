@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 const FaqSection = () => {
     const { t } = useTranslation();
-    const faqData = t('faqSection.faq', { returnObjects: true });
+    const faqData = t('landing.faqSection.faq', { returnObjects: true });
     const [activeIndex, setActiveIndex] = useState(null);
 
     const toggleIndex = (index) => {
@@ -16,7 +16,7 @@ const FaqSection = () => {
     return (
         <section className="faq-section">
             <div className="wrapper container">
-                <h2 className="faq-title text-dark">{t('faqSection.title')}</h2>
+                <h2 className="faq-title text-dark">{t('landing.faqSection.title')}</h2>
                 <div className="faq-list">
                     {faqData.map((item, index) => (
                         <div
